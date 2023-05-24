@@ -32,6 +32,9 @@ pip-log.txt
 coverage.xml
 htmlcov/
 
+#db
+*.db
+
 
 
 # The Silver Searcher
