@@ -33,6 +33,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.sessions',
     'lmedxanalytics',
+    'rest_framework'
 )
 
 LOCALE_PATHS = [
@@ -51,7 +52,8 @@ MIDDLEWARE = (
 
 TEMPLATES = [{
     'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    'APP_DIRS': False,
+    'DIRS' : [],
+    'APP_DIRS': True,
     'OPTIONS': {
         'context_processors': [
             'django.contrib.auth.context_processors.auth',  # this is required for admin
@@ -60,4 +62,5 @@ TEMPLATES = [{
     },
 }]
 
-DEBUG = True
+DEBUG = False
+# ALLOWED_HOSTS = ['localhost']
